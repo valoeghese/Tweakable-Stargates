@@ -41,7 +41,7 @@ public class TSGCraft
     }
 
     @EventHandler
-    public void init(FMLInitializationEvent event)
+    public void init(FMLInitializationEvent e)
     {
     }
 }
