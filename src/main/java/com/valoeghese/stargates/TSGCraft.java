@@ -4,10 +4,13 @@ import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
+import com.valoeghese.stargates.proxy.ClientProxy;
+import com.valoeghese.stargates.proxy.CommonProxy;
 import com.valoeghese.stargates.util.main.GameSide;
 
 @Mod(modid = TSGCraft.MODID, name = TSGCraft.NAME, version = TSGCraft.VERSION)
@@ -25,16 +28,16 @@ public class TSGCraft
     
     @Instance
     public static TSGCraft instance;
-
+    
+    @SidedProxy(clientSide = CLIENT_PROXY_CLASS, serverSide = COMMON_PROXY_CLASS)
+    public static CommonProxy proxy;
+    
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent e)
     {
-    	//Initialize utility instance for Client/Server
+    	//Initialize utility instance for Client/Server for possible further use.
     	preSide = new GameSide(e);
-
-        if (preSide.isClient()) {
-        	
-        }
     }
 
     @EventHandler
