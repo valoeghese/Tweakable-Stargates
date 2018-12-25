@@ -1,5 +1,6 @@
 package com.valoeghese.stargates;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -43,5 +44,11 @@ public class TSGCraft
     @EventHandler
     public void init(FMLInitializationEvent e)
     {
+    }
+    
+    //get modded creative tab
+    public static CreativeTabs getCreativeTab()
+    {
+    	return CreativeTabs.REDSTONE;
     }
 }

@@ -9,11 +9,11 @@ import net.minecraft.item.Item;
 
 public class BaseItem extends Item implements IHasModel
 {
-	public BaseItem(String name, CreativeTabs tab)
+	public BaseItem(String name)
 	{
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
-		this.setCreativeTab(tab);
+		this.setCreativeTab(TSGCraft.getCreativeTab());
 		ItemInit.ITEMS.add(this);
 	}
 	

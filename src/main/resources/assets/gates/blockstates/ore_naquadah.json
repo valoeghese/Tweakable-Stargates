@@ -1,0 +1,9 @@
+{
+    "variants":
+    {
+        "normal":
+        {
+            "model": "gates:ore_naquadah"
+        }
+    }
+}

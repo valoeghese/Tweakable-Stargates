@@ -10,7 +10,7 @@ public class ItemFuel extends BaseItem
 	
 	public ItemFuel(String name, float burnTimeIn)
 	{
-		super(name, CreativeTabs.MATERIALS);
+		super(name);
 		
 		this.burnTime = burnTimeIn;		
 	}
