@@ -1,0 +1,8 @@
+item.naquadah.name=Naquadah
+item.ingot_naquadah.name=Naquadah Alloy Ingot
+tile.ore_naquadah.name=Naquadah Ore
+
+//Stargate
+tile.stargate_base.name=Stargate Base
+tile.stargate_chevron.name=Stargate Ring Chevron
+tile.stargate_ring.name=Stargate Ring

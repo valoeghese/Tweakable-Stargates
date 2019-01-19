@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures":
+    {
+        "north": "sgcraft2:blocks/stargate_base",
+        "east": "sgcraft2:blocks/stargate",
+        "south": "sgcraft2:blocks/stargate",
+        "west": "sgcraft2:blocks/stargate",
+        "up": "sgcraft2:blocks/stargate",
+        "down": "sgcraft2:blocks/stargate",
+        "particle": "sgcraft2:blocks/stargate"
+    }
+}
