@@ -23,8 +23,8 @@ public class TSGCraft
     public static final String NAME = "Tweakable Stargates";
     public static final String VERSION = "1.0";
     
-    public static final String CLIENT_PROXY_CLASS = "com.valoeghese.stargates.proxy.ClientProxy";
-    public static final String COMMON_PROXY_CLASS = "com.valoeghese.stargates.proxy.CommonProxy";
+    public static final String CLIENT_PROXY_CLASS = "valoeghese.stargates.proxy.ClientProxy";
+    public static final String COMMON_PROXY_CLASS = "valoeghese.stargates.proxy.CommonProxy";
     private static Logger logger;
     
     public GameSide preSide;
@@ -41,6 +41,7 @@ public class TSGCraft
     {
     	//Initialize utility instance for Client/Server for possible further use.
     	preSide = new GameSide(e);
+    	logger = e.getModLog();
     }
 
     @EventHandler
@@ -48,7 +49,7 @@ public class TSGCraft
     {
     }
     
-    public static final CreativeTabs TAB = new CreativeTabs("sgcraft") {
+    static final CreativeTabs TAB = new CreativeTabs("sgcraft") {
 
 		@Override
 		public ItemStack getTabIconItem() {
@@ -59,6 +60,6 @@ public class TSGCraft
     //get modded creative tab
     public static CreativeTabs getCreativeTab()
     {
-    	return CreativeTabs.REDSTONE;
+    	return TAB;
     }
 }
